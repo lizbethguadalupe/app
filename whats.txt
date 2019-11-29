@@ -1,0 +1,124 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(Wt());
+
+class Wt extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          primarySwatch: Colors.green
+      ),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('WhatsApp',
+            style: TextStyle(
+                color: Colors.white,
+                fontSize: 20.0,
+                fontFamily: 'Arial'
+            ),
+            textAlign: TextAlign.left,
+          ),
+          backgroundColor: Color.fromARGB(255, 50, 110, 90),
+        ),
+        body:
+        ListView(
+          children: <Widget>[
+            Card(
+              margin: EdgeInsets.all(1),
+              elevation: 0.0,
+              child: ListTile(
+                leading: Image.network('https://i.ytimg.com/vi/CoVAprP9DB8/maxresdefault.jpg', width: 60),
+                title: Text('Lety'),
+                subtitle: Text('En donde estas amor?...'),
+                trailing: Text('9:31 p. m.', textAlign: TextAlign.right, style: TextStyle(fontSize: 12.0, color: Colors.grey),),
+              ),
+            ),
+            Card(
+              elevation: 0.0,
+              margin: EdgeInsets.all(1),
+              child: ListTile(
+                leading: Image.network('http://www.cabanadirecto.com.ar/wp-content/uploads/2018/01/jamon-cocido-310011-01.jpg', width: 60,),
+                title: Text('Dana'),
+                subtitle: Text('Ya nos vamos al cine?'),
+                trailing: Text('8:29 p. m.', textAlign: TextAlign.right, style: TextStyle(fontSize: 12.0, color: Colors.grey),),
+              ),
+            ),
+            Card(
+              elevation: 0.0,
+              margin: EdgeInsets.all(1),
+              child: ListTile(
+                leading: Image.network('https://www.lavanguardia.com/r/GODO/LV/p4/WebSite/2017/10/09/Recortada/img_cvillalonga_20170427-183416_imagenes_lv_terceros_istock-184987985-kk5-U431919659565qoE-992x558@LaVanguardia-Web.jpg', width: 60,),
+                title: Text('Mamá'),
+                subtitle: Text('Adrian, ¿A que hora llegas?'),
+                trailing: Text('7:32 p. m.', textAlign: TextAlign.right, style: TextStyle(fontSize: 12.0, color: Colors.grey),),
+              ),
+            ),
+            Card(
+              elevation: 0.0,
+              margin: EdgeInsets.all(1),
+              child: ListTile(
+                leading: Image.network('https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/06/20/perro_comunicar_mascota_0.jpg?itok=BCp_XA7c', width: 60,),
+                title: Text('Charly'),
+                subtitle: Text('Camara perro :v'),
+                trailing: Text('6:28 p. m.', textAlign: TextAlign.right, style: TextStyle(fontSize: 12.0, color: Colors.grey),),
+              ),
+            ),
+            Card(
+              elevation: 0.0,
+              margin: EdgeInsets.all(1),
+              child: ListTile(
+                leading: Image.network('https://scontent.fmex7-2.fna.fbcdn.net/v/t1.0-9/48358617_2205278469525029_5646420382509432832_n.jpg?_nc_cat=109&_nc_oc=AQlYqbZAqDGal4h-1bMXbp55_5wQJswSUwKzelHXdSVe733SaUbE9j2fNCdfiju4VdM&_nc_ht=scontent.fmex7-2.fna&oh=3ac414137edc7fa2376dea671b217d14&oe=5E2D1356', width: 60,),
+                title: Text('Iván'),
+                subtitle: Text('Vamos a jugar?!'),
+                trailing: Text('5:33 p. m.', textAlign: TextAlign.right, style: TextStyle(fontSize: 12.0, color: Colors.grey),),
+              ),
+            ),
+            Card(
+              elevation: 0.0,
+              margin: EdgeInsets.all(1),
+              child: ListTile(
+                leading: Image.network('https://scontent.fmex7-2.fna.fbcdn.net/v/t1.0-9/61592758_2287892634597250_1754519751305986048_n.jpg?_nc_cat=106&_nc_oc=AQmpSWyTi2u1a6rrxNB_FMEmCgtU97NzDnSanAqb2Pe2-cqiTmVpfpxgR9Q8zs6ALPw&_nc_ht=scontent.fmex7-2.fna&oh=348cf4b316b89c5f3c2894810c4515e4&oe=5E1AA05E', width: 60,),
+                title: Text('Miguel'),
+                subtitle: Text('Adrian, ya te deposite los 500,000 pesos...'),
+                trailing: Text('4:27 p. m.', textAlign: TextAlign.right, style: TextStyle(fontSize: 12.0, color: Colors.grey),),
+              ),
+            ),
+            Card(
+              elevation: 0.0,
+              margin: EdgeInsets.all(1),
+              child: ListTile(
+                leading: Image.network('https://scontent.fmex7-1.fna.fbcdn.net/v/t1.0-9/16864708_1476271349059372_7796361996259118167_n.jpg?_nc_cat=100&_nc_oc=AQnxI4xTl3LZIFGPisKiqtafn8R8a2TdkTPD499rvHz3wmYjdJr50PSmUUv5saJjmPM&_nc_ht=scontent.fmex7-1.fna&oh=3180fa7f167097e3f50d256184f93af2&oe=5E6029E2', width: 60,),
+                title: Text('Luis'),
+                subtitle: Text('Esta noche fiesta en mi yate :v'),
+                trailing: Text('3:34 p. m.', textAlign: TextAlign.right, style: TextStyle(fontSize: 12.0, color: Colors.grey),),
+              ),
+            ),
+            Card(
+              elevation: 0.0,
+              margin: EdgeInsets.all(1),
+              child: ListTile(
+                leading: Image.network('https://scontent.fmex7-1.fna.fbcdn.net/v/t1.0-9/52344353_2046136475451899_8262986846611439616_n.jpg?_nc_cat=105&_nc_oc=AQn1VrxH6d9zE2PkgnviRMB5xo4yRbF83txikeT1LhdCI9VKD9AEJez9suCzud0vtZM&_nc_ht=scontent.fmex7-1.fna&oh=449f81bbf79b4cf3e29abe0868702705&oe=5E577CAB', width: 60,),
+                title: Text('Vitor'),
+                subtitle: Text('Pasas por mi para ir con Luis?'),
+                trailing: Text('2:26 p. m.', textAlign: TextAlign.right, style: TextStyle(fontSize: 12.0, color: Colors.grey),),
+              ),
+            ),
+            Card(
+              elevation: 0.0,
+              margin: EdgeInsets.all(1),
+              child: ListTile(
+                leading: Image.network('https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/la-fundacion-de-google.png', width: 60,),
+                title: Text('+5534873936'),
+                subtitle: Text('Queremos ofrecerte un aumento'),
+                trailing: Text('1:35 p. m.', textAlign: TextAlign.right, style: TextStyle(fontSize: 12.0, color: Colors.grey),),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
